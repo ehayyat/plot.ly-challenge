@@ -53,7 +53,9 @@ function createChart (sample) {
         y: ids.slice(0, 10).map(otuID => `OTU ${otuID}`).reverse(),
         x: values.slice(0,10).reverse(),
         text: labels.slice(0,10).reverse(),
-        type: "bar"
+        type: "bar",
+        orientation: "h",
+        text: labels
     }];
 
     var layout2 = {
